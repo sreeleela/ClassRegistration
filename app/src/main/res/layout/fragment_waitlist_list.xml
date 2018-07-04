@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/waitlist"
+    android:name="com.example.sree.classregistration.waitlistFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="com.example.sree.classregistration.WaitlistFragment"
+    tools:listitem="@layout/fragment_waitlist">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="460dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/msg"
+        android:layout_below="@+id/delete"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/msg"
+        android:layout_below="@+id/msg"
+        android:layout_marginStart="18dp"
+        android:text="Delete"
+        android:visibility="visible" />
+
+</RelativeLayout>
