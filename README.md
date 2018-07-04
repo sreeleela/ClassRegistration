@@ -15,3 +15,18 @@ A brief overview of the commands that are send to the server (web services consu
   * unregisterclass Drops a student from the course.
   * unwaitlistclass Removes the student from a course waitlist.
   * resetstudent Drops the student from all courses and removes them from all waitlists.
+  # How to run this project
+1. open android studio<br>
+   File -> New -> Project from Version Control -> GitHub (Url: https://github.com/sreeleela/ClassRegistration.git )(clone from here)<br>
+   Now Run the Project
+   
+2. Download Zip file of Project and unzip it (Suppose the unziped folder is in downloads and the name is ClassRegistration-master)<br>
+   open android studio<br>
+   File -> New -> Import Project<br>
+   Select Eclipse or Gradle Project to Import<br>
+   Downloads -> ClassRegistration-master -> ClassRegistration-master<br>
+   Now run the project<br>
+   
+<br>If the build fails do the following<br>
+Tools -> Android -> Syn Project with Gradle Files<br>
+And run the project again
